@@ -3,75 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="bmw, bmw-m, bmw motorsport, bmw m fans almeria"
+    />
+    <meta
+      name="description"
+      content="pagina oficial del club de aficionados BMW M FANS"
+    />
     <link
       rel="icon"
-      href="https://www.autonocion.com/wp-content/uploads/2020/05/Logo-BMW-M.jpg"
+      href="./assets/images/Logo-BMW-M.jpg"
       type="image/x-icon"
     />
     <title>BMW M FANS ALMERIA</title>
   </head>
   <body>
     <header>
-      <h1>BMW M FANS ALMERIA</h1>
-      <p>
-        Bienvenidos a la pagina oficial del club de aficionados BMW M FANS
-        ALMERIA.
-      </p>
+      <section>
+        <h1>BMW M FANS ALMERIA</h1>
+        <img src="./assets/images/Logo-BMW-M.jpg" alt="logom" height="40" />
+        <p>
+          Bienvenidos a la pagina oficial del club de aficionados BMW M FANS
+          ALMERIA.
+        </p>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#kdd1">1ªKDD</a>
+          </li>
+          <li>
+            <a href="#proximosEventos">Proximos eventos</a>
+          </li>
+          <li>
+            <a href="#inscripcion">Unete a nosotros</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
       <img
-        src="https://www.bmw-m.com/content/dam/bmw/marketBMW_M/www_bmw-m_com/fastlane/motorsport/2024/bmw-m-motorsport-overview-stage-01-16x9.jpg?imwidth=1280"
+        src="./assets/images/cabecera.avif"
         alt="bmw motorsport"
-        width="800px"
         title="Coches de competicion oficiales de bmw"
       />
-      
     </header>
     <main>
-      <section>
+      <section id="kdd1">
         <h2>1ªKDD BMW M FANS ALMERIA</h2>
-        <p>
-          Aqui os dejamos un pequeño resumen de lo que fue nuestra primera
-          quedada del club.
-        </p>
-        <img src="https://unumove.com/wp-content/uploads/VII-Clasica-Puerto-de-La-Ragua-Bmw-Z-y-M-08.jpg" alt="1ªKDD_1" width="600" title="Bmw's aparcados en modo exposicion">
-        
-        <img src="https://unumove.com/wp-content/gallery/vii-puerto-de-la-ragua-bmw-z-y-m/VII-Clasica-Puerto-de-La-Ragua-Bmw-Z-y-M-01.JPG" alt="1ªKDD_2" width="600" title="BMW M4 negro y BMW M3 amarillo">
-        
+        <article>
+          <h3>Resumen:</h3>
+          <p>El dia comenzo con la acreditacion de todos los asistentes en el parking del estadio de los juego mediterraneos. Despues de desa</p>
+        </article>
+        <details>
+          <summary>Lista de asistentes:</summary>
+          <ul>
+            <li>Antonio - BMW M4</li>
+            <li>Pepe - BMW x4M</li>
+            <li>Juanico - BMW M2</li>
+          </ul>
+        </details>
+        <p>Aqui os dejamos unas fotos del evento:</p>
+        <figure>
+          <img src="./assets/images/foto_1.jpg" alt="1ªKDD_1" width="600" />
+          <figcaption>Bmw's aparcados en modo exposicion</figcaption>
+          </figure>
+          <figure>
+          <img src="./assets/images/foto_2.jpg" alt="1ªKDD_2" width="600" />
+          <figcaption>BMW M4 negro y BMW M3 amarillo</figcaption>
+        </figure>
 
-        <!-- <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/clcdJQEdJ-I?si=RA8Ssbgvlaklrdua"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe> -->
-        <div>
-          <label for="comentarios">Comentarios:</label>
-          <textarea
-            name="Comentarios"
-            id="comentarios"
-            rows="5"
-            cols="80"
-          ></textarea>
-        </div>
+        <textarea
+          name="Comentarios"
+          id="comentarios"
+          rows="5"
+          cols="80"
+          placeholder="Publica aqui tu comentario:"
+        ></textarea>
+        <button>Enviar</button>
       </section>
-      <section>
+      <section id="proximosEventos">
+        <h2>Proximos Eventos</h2>
+        <article>
+          <h3>2ª kdd BMW M FANS ALMERIA</h3>
+          <details>
+            <summary>Mas informacion:</summary>
+            <p>Fecha: 30/10/2024</p>
+            <p>Ruta por la alpujarra almeriense y comida a mitad de la ruta.</p>
+            <a href="null">Quiero participar</a>
+          </details>
+        </article>
+        <article>
+          <h3>Tanda privada en el circuito de andalucia</h3>
+          <details>
+            <summary>Mas informacion:</summary>
+            <p>Fecha: 25/11/2024</p>
+            <p>
+              Disfrutaremos de una tanda privada solo para miembros del club
+            </p>
+            <a href="null">Quiero participar</a>
+          </details>
+        </article>
+      </section>
+      <section id="inscripcion">
         <h2>Te gustaria formar parte de nuestra familia?</h2>
-        <h3>
+        <p>
           Rellena el formulario de inscripcion y nos pondremos en contacto lo
           antes posible!
-        </h3>
+        </p>
         <form action="inscripcion" method="post">
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre">
-          <label for="apellidos">Apellidos</label>
-          <input type="text" name="apellidos">
-          <label for="correo_electronico">Correo electronico</label>
-          <input type="email" name="correo_electronico">
+          <label for="nombre">Nombre:</label>
+          <input id="nombre" type="text" name="nombre" required />
+          <label for="apellidos">Apellidos:</label>
+          <input id="apellidos" type="text" name="apellidos" required />
+          <label for="correo_electronico">Correo electronico:</label>
+          <input id="correo_electronico" type="email" name="correo_electronico" required />
+          <label for="coche">Coche:</label>
+          <select id="coche" name="coche">
+            <option value="modeloCoche">1M</option>
+            <option value="modeloCoche">M2</option>
+            <option value="modeloCoche">M3</option>
+            <option value="modeloCoche">M4</option>
+            <option value="modeloCoche">M5</option>
+            <option value="modeloCoche">M6</option>
+            <option value="modeloCoche">M8</option>
+            <option value="modeloCoche">x3M</option>
+            <option value="modeloCoche">x4M</option>
+            <option value="modeloCoche">x5M</option>
+            <option value="modeloCoche">x6M</option>
+          </select>
+          <input type="submit" value="Enviar" />
         </form>
       </section>
     </main>
+    <footer>
+      <address id="contacto">
+        <p>BMW M FANS ALMERIA</p>
+        <p>bmwmfans@almeria.com</p>
+      </address>
+      <p>Copiright @ManuelCaroDev</p>
+    </footer>
   </body>
 </html>
